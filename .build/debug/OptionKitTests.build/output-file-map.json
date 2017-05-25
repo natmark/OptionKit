@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/master.swiftdeps"
+  },
+  "/Users/AtsuyaSato/Desktop/OptionKit/Tests/OptionKitTests/OptionKitTests.swift": {
+    "dependencies": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.d",
+    "object": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swift.o",
+    "swiftmodule": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swiftdeps"
+  }
+}
