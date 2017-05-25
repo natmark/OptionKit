@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/master.swiftdeps"
+  },
+  "/Users/AtsuyaSato/Desktop/OptionKit/Sources/OptionKit.swift": {
+    "dependencies": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.d",
+    "object": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o",
+    "swiftmodule": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swiftdeps"
+  }
+}

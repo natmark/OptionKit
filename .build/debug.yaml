@@ -1,0 +1,47 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.swiftmodule","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.swiftmodule","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitPackageTests.xctest/Contents/MacOS/OptionKitPackageTests"]
+  "main": ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.swiftmodule"]
+default: "main"
+commands: 
+  "<OptionKit.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "OptionKit"
+    module-output-path: "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.swiftmodule"
+    inputs: ["/Users/AtsuyaSato/Desktop/OptionKit/Sources/OptionKit.swift"]
+    outputs: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.swiftmodule"]
+    import-paths: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug"]
+    temps-path: "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build"
+    objects: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-cache-path","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/ModuleCache"]
+    sources: ["/Users/AtsuyaSato/Desktop/OptionKit/Sources/OptionKit.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<OptionKitTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "OptionKitTests"
+    module-output-path: "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.swiftmodule"
+    inputs: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.swiftmodule","/Users/AtsuyaSato/Desktop/OptionKit/Tests/OptionKitTests/OptionKitTests.swift"]
+    outputs: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.swiftmodule"]
+    import-paths: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug"]
+    temps-path: "/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build"
+    objects: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-cache-path","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/ModuleCache"]
+    sources: ["/Users/AtsuyaSato/Desktop/OptionKit/Tests/OptionKitTests/OptionKitTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<OptionKitPackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/OptionKitPackageTests.xctest/Contents/MacOS/OptionKitPackageTests"
+    inputs: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o"]
+    outputs: ["/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitPackageTests.xctest/Contents/MacOS/OptionKitPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L/Users/AtsuyaSato/Desktop/OptionKit/.build/debug","-o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitPackageTests.xctest/Contents/MacOS/OptionKitPackageTests","-module-name","OptionKitPackageTests","-Xlinker","-bundle","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKitTests.build/OptionKitTests.swift.o","/Users/AtsuyaSato/Desktop/OptionKit/.build/debug/OptionKit.build/OptionKit.swift.o"]
+

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "aeb72fa36b8d2af46742cfd414b0d7ef"
+build_time: [548994423, 997630000]
+inputs:
+  "/Users/AtsuyaSato/Desktop/OptionKit/Tests/OptionKitTests/OptionKitTests.swift": [548994389, 0]
